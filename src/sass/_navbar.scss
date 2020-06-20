@@ -1,0 +1,24 @@
+@import './sass/_variables.scss';
+@import './sass/_mixins.scss';
+nav,
+.navbar,
+.navbar-expand-md {
+    @include shadow;
+    background: $blue-lighter !important;
+}
+
+.nav-link {
+    @include box;
+    width: 150px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+    .nav-link {
+        position: relative;
+        float: right;
+        margin: 10px 0 0 0;
+    }
+}

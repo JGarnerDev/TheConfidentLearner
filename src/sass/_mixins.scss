@@ -1,0 +1,18 @@
+@import './sass/_variables.scss';
+//
+//
+@mixin box {
+    border-radius: 20px;
+    background: $blue-transparent;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+@mixin centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

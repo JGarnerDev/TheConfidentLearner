@@ -1,0 +1,239 @@
+.jumbotron {
+  background-color: transparent;
+}
+
+.jumbotron h1 {
+  line-height: 0.8em;
+}
+
+.jumbotron p {
+  border-radius: 20px;
+  background: rgba(13, 182, 239, 0.2);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.jumbotron .jumbo-left,
+.jumbotron .jumbo-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .jumbotron {
+    text-align: center;
+    flex-grow: 1;
+    min-height: 70vh !important;
+    margin: 40px 0px 40px 0px;
+    padding: 20px 0 0 0;
+  }
+
+  .jumbotron .container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .jumbotron .row,
+  .jumbotron .jumbo-left,
+  .jumbotron .jumbo-right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .jumbotron .row p,
+  .jumbotron .jumbo-left p,
+  .jumbotron .jumbo-right p {
+    border-radius: 0;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links .link {
+  border-radius: 20px;
+  background: rgba(13, 182, 239, 0.2);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  max-width: 260px;
+  text-align: center;
+}
+
+nav,
+.navbar,
+.navbar-expand-md {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  background: #9bd8ec !important;
+}
+
+.nav-link {
+  border-radius: 20px;
+  background: rgba(13, 182, 239, 0.2);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+.navbar-collapse.collapsing .nav-link,
+.navbar-collapse.show .nav-link {
+  position: relative;
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+.program {
+  border-radius: 20px;
+  background: rgba(13, 182, 239, 0.2);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 10px 10px;
+  width: 90vw;
+  max-width: 1000px;
+  margin-left: 5vw;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.program .thumbnail {
+  border-radius: 20px;
+  background: rgba(13, 182, 239, 0.2);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  max-width: 50vw;
+  padding: 10px 10px 10px 10px;
+}
+
+.program .text {
+  word-break: break-all;
+}
+
+@media (max-width: 576px) {
+  .program .text {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.testimonial {
+  border-radius: 20px;
+  background: rgba(13, 182, 239, 0.2);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 90vw;
+  max-width: 1000px;
+  margin-left: 5vw;
+  word-wrap: break-word;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.testimonial .author {
+  position: relative;
+  top: -15px;
+  right: 5px;
+  float: right;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#contactform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactform textarea {
+  width: 90vw;
+  max-width: 1000px;
+}
+
+#contactform input {
+  min-width: 100px;
+  max-width: 90vw;
+}
+
+#contactform form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body,
+footer {
+  background: rgba(13, 182, 239, 0.2) !important;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer hr {
+  margin: 0;
+}
+
+footer p {
+  margin-top: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-grow: 1;
+  background: linear-gradient(#9bd8ec, white);
+}
+
+.page-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+}
+
+.page-header hr {
+  margin: 0;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.page-header p {
+  padding: 0 10px 0 10px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+

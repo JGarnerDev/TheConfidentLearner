@@ -1,0 +1,58 @@
+@import './sass/_variables.scss';
+@import './sass/_mixins.scss';
+.jumbotron {
+    background-color: transparent;
+    h1 {
+        line-height: 0.8em;
+    }
+    p {
+        @include box;
+        padding: 10px;
+        text-align: center;
+        font-style: italic;
+    }
+    .jumbo-left,
+    .jumbo-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: $breakpoint-lg) {
+        text-align: center;
+        flex-grow: 1;
+        min-height: 70vh !important;
+        margin: 40px 0px 40px 0px;
+        padding: 20px 0 0 0;
+        .container {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+        .row,
+        .jumbo-left,
+        .jumbo-right {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            p {
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    .link {
+        @include box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        max-width: 260px;
+        text-align: center;
+    }
+}

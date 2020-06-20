@@ -1,0 +1,20 @@
+@import './sass/_variables.scss';
+@import './sass/_mixins.scss';
+.testimonial {
+    @include box;
+    padding: 10px;
+    width: 90vw;
+    max-width: 1000px;
+    margin-left: 5vw;
+    word-wrap: break-word;
+    font-style: italic;
+    font-weight: 600;
+    .author {
+        position: relative;
+        top: -15px;
+        right: 5px;
+        float: right;
+        font-style: normal;
+        font-weight: 700;
+    }
+}

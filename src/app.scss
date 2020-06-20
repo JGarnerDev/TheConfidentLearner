@@ -1,0 +1,64 @@
+@import './sass/_variables.scss';
+@import './sass/_mixins.scss';
+@import './sass/frontpage';
+@import './sass/navbar';
+@import './sass/programspage';
+@import './sass/testimonialspage';
+@import './sass/contactpage';
+//
+//
+// // Globals
+//
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    ::-webkit-scrollbar {
+    display: none;
+}
+}
+
+body,
+footer {
+    background: $blue-transparent !important;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    hr {
+        margin: 0;
+    }
+    p {
+        margin-top: 15px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-grow: 1;
+    background: linear-gradient($blue-lighter, white);
+}
+
+.page-header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    hr {
+        margin: 0;
+        @include shadow;
+    }
+    p {
+        padding: 0 10px 0 10px;
+        line-height: 20px;
+    }
+    @media (min-width: 768px) {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
